@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=400">
+    <title>About Us</title>
+    <link rel="icon" type="image/png" href="img/home3.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/Capture2.jpg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Properties
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="buy.html">Buy</a>
+                        <a class="dropdown-item" href="sell.html">Sell</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="rent.html">Rent</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agents.html">Agents</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About-Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#form">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#form2">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br><br><br>
+    <div class="modal fade rounded" id="form2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="model-title w-100 text-center">Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex flex-column text-center">
+                  <form class="pr-4 pl-4">
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" id="email1"placeholder="Enter Your Email Address">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="email1"placeholder="Enter Your Password">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-block btn-round">Login</button><br>
+                    <p>Forgot Password? <a href="#" class="text-secondary">Click Here</a></p>
+                  </form>
+                  <div class="modal-footer justify-content-center">
+                    <div>Not a member yet? <a href="#" data-toggle="modal" data-target="#form" class="text-secondary"> Sign Up</a></div>
+                </div>
+                </div>
+            </div> 
+            </div> 
+        </div>
+    </div>
+    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="model-title w-100 text-center">Sign Up</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-secondary">Please fill this form to create an account</p>
+                <div class="d-flex flex-column text-center">
+                  <form class="pr-4 pl-4">
+                      <div class="form-group row">
+                          <div class="col-md-12">
+                            <input type="text" class="form-control" id="email1"placeholder="Enter a Username">
+                          </div>
+                      </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" id="email1"placeholder="Enter an Email Address">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="email1" placeholder="Enter a Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="email1" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-block btn-round">Signup</button><br>
+                    <div class="text-centerS">or use a social network</div>
+                    <div class=" justify-content-center">
+                        <p class="social"><a href="#"><i class="fab fa-facebook text-secondary"></i></a>
+                            <a href="#"><i class="fab fa-twitter text-secondary"></i></a>
+                            <a href="#"><i class="fab fa-google text-secondary"></i></a></p>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="modal-footer justify-content-center">
+                    <div><h5>Already a member? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#form2" class="text-secondary"> Login</a></h5></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+    <h2 id="heading">About Us</h2><br>
+    
+    <div class="container">
+        <div class="row m-3">
+            <div class="col-md-5">
+                <img src="img/8.png" alt="" width="100%">
+            </div>
+            <div class="col-md-6 text-center">
+                <h1>OUR MISSION</h1>
+                <h5>We give you the opportunity to select the perfect home for you and your family.</h5>
+                <p>Contact our agents for personal counselling and ideas.</p>
+            </div>
+        </div>
+    </div>
+    <h1 id="heading">FEATURED PROPERTIES</h1>
+    <div>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel" style="width: 100%;">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner ab">
+              <div class="carousel-item active">
+                <img src="img/front.jpg" class="d-block w-100 zoom ab" alt="house">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="card m-3 rounded img-zoom" style="width: 18rem;height: 380px;background-color: rgba(0, 0, 0, 0.575);">
+                        <div class="card-body view">
+                            <h5 class="card-title">Memon House</h5>
+                            <p class="card-text">Fully Furnished double story Banglow at the perfect location.</p>
+                            <h4>Rs. 11 Crore</h4>  
+                            <img src="img/svg_icon/location.svg" alt="location" class="imgg">DHA,Karachi
+                            <a href="#"><button class="btn btn-outline-info">More Details</button></a>
+                            <hr class="style2">
+                            <div class="card-footer info">  
+                                8<img src="img/svg_icon/bath.svg" alt="" class="imag">
+                                8<img src="img/svg_icon/bed.svg" alt="" class="imag">
+                                500 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imag">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/front3.jpg" class="d-block w-100 zoom ab" alt="house1">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="card m-3 rounded img-zoom" style="width: 18rem;height: 380px;background-color: rgba(0, 0, 0, 0.575);">
+                        <div class="card-body view">
+                            <h5 class="card-title">The Villa</h5>
+                            <p class="card-text">Luxury villa for sale in Karachi. Available at a reasonable price.</p>
+                            <h4>Rs. 7 Crore</h4>  
+                            <img src="img/svg_icon/location.svg" alt="location" class="imgg">Gulberg, Lahore
+                            <a href="#"><button class="btn btn-outline-info">More Details</button></a>
+                            <hr class="style2">
+                            <div class="card-footer info">  
+                                6<img src="img/svg_icon/bath.svg" alt="" class="imag">
+                                6<img src="img/svg_icon/bed.svg" alt="" class="imag">
+                                450 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imag">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/house.jpg" class="d-block w-100 ab" alt="house2">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="card m-3 rounded img-zoom" style="width: 18rem;height: 380px;background-color: rgba(0, 0, 0, 0.575);">
+                        <div class="card-body view">
+                            <h5 class="card-title">Kings' Home</h5>
+                            <p class="card-text">Single story banglow with parking and lawn available on Sale</p>
+                            <h4>Rs. 10 Crore</h4>  
+                            <img src="img/svg_icon/location.svg" alt="location" class="imgg">G-12, Islamabad
+                            <a href="#"><button class="btn btn-outline-info">More Details</button></a>
+                            <hr class="style2">
+                            <div class="card-footer info">  
+                                6<img src="img/svg_icon/bath.svg" alt="" class="imag">
+                                6<img src="img/svg_icon/bed.svg" alt="" class="imag">
+                                500 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imag">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+    <h1 id="heading">OUR AGENTS</h1>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-4 col-sm-6">
+                <div class="box16">
+                    <img src="https://scontent.fkhi16-1.fna.fbcdn.net/v/t1.0-9/83056888_2677809025643811_641244260879826944_o.jpg?_nc_cat=106&_nc_sid=09cbfe&_nc_ohc=dvdYNf2Ts5wAX_Y_444&_nc_ht=scontent.fkhi16-1.fna&oh=f437cdb8a037ea14e9bdae8550f7f3e0&oe=5EFF2FF2">
+                    <div class="box-content">
+                        <h3 class="title">Osama Yousuf</h3>
+                        <span class="post">Realter</span>
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="box16">
+                    <img src="https://scontent.fkhi16-1.fna.fbcdn.net/v/t1.0-9/46965708_10210200247962276_5881939655829487616_n.jpg?_nc_cat=100&_nc_sid=174925&_nc_ohc=SVjX6BAO2-gAX-h5pum&_nc_ht=scontent.fkhi16-1.fna&oh=580612f0eec99280813781e53723c07a&oe=5EFE0A13">
+                    <div class="box-content">
+                        <h3 class="title">Ahmed Yousuf</h3>
+                        <span class="post">Realtor</span>
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="box16">
+                    <img src="https://scontent.fkhi16-1.fna.fbcdn.net/v/t31.0-8/26059992_1399550956833765_3247884834430318030_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=yx8pNmRL7OQAX-DcpNk&_nc_ht=scontent.fkhi16-1.fna&oh=8b1c027be2b3a0de98ead714c1ba7e0d&oe=5EFF73BC">
+                    <div class="box-content">
+                        <h3 class="title">Anas Jakwani</h3>
+                        <span class="post">Realtor</span>
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="rent">
+                <h1 class="m-4 add">Find Properties Available to Buy</h1>
+                <a href="buy.html" style="text-decoration: none;color: white;"><button class="btn btn-secondary hh m-5">+Find</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="sale">
+                <h1 class="m-4 add">Find Properties Available on Rent</h1>
+                <a href="rent.html" style="text-decoration: none;color: white;"><button class="btn btn-secondary hh m-5">+Find</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="salee">
+                <h1 class="m-4 add">Add Your Property for Sale</h1>
+                <a href="sell.html"><button class="btn btn-secondary hh m-5">+Add</button></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md rights">
+            <a href="index.html"><img src="img/logo1.jpg" alt="logo" style="opacity: 0.8;"></a><br>
+            <br><h4>Follow Us on Social Media</h4>
+            <p class="social"><a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin-square"></i></a></p>
+                </div>
+                <div class="col-md">
+                    <h2>Contact Us</h2>
+                    <ul class="mt-4 p-2">
+                        <li><i class="fa fa-phone-square foot"> +92 336 2417513 </i></li>
+                        <li><i class="fa fa-envelope foot"> minha@gmail.com </i></li>
+                        <li><i class="fa fa-location-arrow foot"> Shop 4,Street 13, Bahadurabad, Karachi</i></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h2>Timing</h2>
+            <ul>
+                <li></li>
+                <hr class="style4">
+                <li class="foot">Monday-Friday: 9AM-9PM</li>
+                <hr class="style4">
+                <li class="foot">Saturday: 9AM-7PM</li>
+                <hr class="style4">
+                <li class="foot">Sunday: Closed</li>
+            </ul>
+                </div>
+                <div class="col-md">
+                    <h2>Useful Links</h2>
+                    <ul>
+                <li><a href="index.html" class="foot">Home</a></li>
+                <li><a href="buy.html" class="foot">Buy Property</a></li>
+                <li><a href="sell.html" class="foot">Sale Property</a></li>
+                <li><a href="rent.html" class="foot">Rent</a></li>
+                <li><a href="about.html" class="foot">About Us</a></li>
+                <li><a href="contact.html" class="foot">Contact</a></li>
+                <li><a href="agents.html" class="foot">Agents</a></li>
+            </ul>
+                </div>
+            <hr class="style2">
+                <div class="col-md-12">
+                    <p class="rights">Copyright &copy; Minha's 2020. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=400">
+    <title>Sale Property</title>
+    <link rel="icon" type="image/png" href="img/home3.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/Capture2.jpg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Properties
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="buy.html">Buy</a>
+                        <a class="dropdown-item active" href="sell.html">Sell</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="rent.html">Rent</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agents.html">Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About-Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#form">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#form2">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br><br><br>
+    <div class="modal fade rounded" id="form2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="model-title w-100 text-center">Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex flex-column text-center">
+                  <form class="pr-4 pl-4">
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" id="email1"placeholder="Enter Your Email Address">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="email1"placeholder="Enter Your Password">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-block btn-round">Login</button><br>
+                    <p>Forgot Password? <a href="#" class="text-secondary">Click Here</a></p>
+                  </form>
+                  <div class="modal-footer justify-content-center">
+                    <div>Not a member yet? <a href="#" data-toggle="modal" data-target="#form" class="text-secondary"> Sign Up</a></div>
+                </div>
+                </div>
+            </div> 
+            </div> 
+        </div>
+    </div>
+    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="model-title w-100 text-center">Sign Up</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-secondary">Please fill this form to create an account</p>
+                <div class="d-flex flex-column text-center">
+                  <form class="pr-4 pl-4">
+                      <div class="form-group row">
+                          <div class="col-md-12">
+                            <input type="text" class="form-control" id="email1"placeholder="Enter a Username">
+                          </div>
+                      </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" id="email1"placeholder="Enter an Email Address">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="email1" placeholder="Enter a Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="email1" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-block btn-round">Signup</button><br>
+                    <div class="text-centerS">or use a social network</div>
+                    <div class=" justify-content-center">
+                        <p class="social"><a href="#"><i class="fab fa-facebook text-secondary"></i></a>
+                            <a href="#"><i class="fab fa-twitter text-secondary"></i></a>
+                            <a href="#"><i class="fab fa-google text-secondary"></i></a></p>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="modal-footer justify-content-center">
+                    <div><h5>Already a member? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#form2" class="text-secondary"> Login</a></h5></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <br><h1 id="heading">Add A Property for Sale</h1><br>
+    <div class="container shadow p-3 mb-5 bg-white rounded">
+        <form class="m-3 mx-auto">
+            <h5 class="prop text-center">Property Type and Location</h5>
+            <fieldset class="form-group">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                  <legend class="col-form-label col-sm-2 pt-0">Purpose: </legend>
+                  <div class="col-sm-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                      <label class="form-check-label" for="gridRadios1">
+                        For Sale 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        For Rent
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-4"></div>
+                </div>
+              </fieldset>
+              <fieldset class="form-group">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                  <legend class="col-form-label col-sm-2 pt-0">Property Type: </legend>
+                  <div class="col-sm-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios1" value="option1">
+                      <label class="form-check-label" for="gridRadios1">
+                         House 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                         Flat 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                           Penthouse 
+                        </label>
+                      </div>
+                  </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <label class="col-form-label col-sm-2 pt-0">City: </label>
+                    <div class="col-sm-3">
+                        <select id="inputState" class="form-control">
+                        <option disabled selected>Select City</option>
+                        <option>Karachi</option>
+                        <option>Lahore</option>
+                        <option>Islamabad</option>
+                        <option>Multan</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <label for="Location" class="col-sm-2 col-form-label">Location</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" placeholder="Enter Location Here">
+                </div>
+            </div>
+            <h5 class="prop text-center">Property Details</h5>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <label for="Title" class="col-sm-2 col-form-label">Property Title</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" placeholder="Enter Property Title">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <label for="Description" class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-3">
+                    <textarea class="form-control" aria-label="With textarea" rows="6" placeholder="Enter Property Description"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <label for="Price" class="col-sm-2 col-form-label">Price</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="number" min="1" step="any" placeholder="Enter a price"/>Contains number only
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <label for="Area" class="col-sm-2 col-form-label">Property Area</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="number" min="1" step="any" placeholder="Enter area in sq.yards"/>Sq.Yards
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <label class="col-form-label col-sm-2 pt-0">No. Of Bedrooms: </label>
+                    <div class="col-sm-3">
+                        <select id="inputState" class="form-control">
+                        <option disabled selected>Bedrooms</option>
+                        <option value="">All</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <label class="col-form-label col-sm-2 pt-0">No. Of Bathrooms: </label>
+                    <div class="col-sm-3">
+                        <select id="inputState" class="form-control">
+                        <option disabled selected>Bathrooms</option>
+                        <option value="">All</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <h5 class="prop text-center">Add Images</h5>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <label for="Images" class="col-sm-2 col-form-label">Add Images</label>
+                <div class="col-sm-3">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </div>
+            <h5 class="prop text-center">Contact Details</h5>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <label for="Name" class="col-sm-2 col-form-label">Full Name</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" placeholder="Enter Location Here">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-3">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="ex@example.com">
+              </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <label for="text" class="col-sm-2 col-form-label">Number</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" placeholder="eg. 03111111111">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-2 mt-3">
+                <button type="submit" class="btn btn-secondary">Submit Property</button>
+              </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="rent">
+                <h1 class="m-4 add">Find Properties Available to Buy</h1>
+                <a href="buy.html" style="text-decoration: none;color: white;"><button class="btn btn-secondary hh m-5">+Find</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="rent">
+                <h1 class="m-4 add">Find Properties Available on Rent</h1>
+                <a href="rent.html" style="text-decoration: none;color: white;"><button class="btn btn-secondary hh m-5">+Find</a></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md rights">
+            <a href="index.html"><img src="img/logo1.jpg" alt="logo" style="opacity: 0.8;"></a><br>
+            <br><h4>Follow Us on Social Media</h4>
+            <p class="social"><a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin-square"></i></a></p>
+                </div>
+                <div class="col-md">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><i class="fa fa-phone-square foot"> +92 336 2417513 </i></li>
+                        <li><i class="fa fa-envelope foot"> minha@gmail.com </i></li>
+                        <li><i class="fa fa-location-arrow foot"> Shop 4,Street 13, Bahadurabad, Karachi</i></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h2>Timing</h2>
+            <ul>
+                <li></li>
+                <hr class="style4">
+                <li class="foot">Monday-Friday: 9AM-9PM</li>
+                <hr class="style4">
+                <li class="foot">Saturday: 9AM-7PM</li>
+                <hr class="style4">
+                <li class="foot">Sunday: Closed</li>
+            </ul>
+                </div>
+                <div class="col-md">
+                    <h2>Useful Links</h2>
+                    <ul>
+                    <li><a href="index.html" class="foot">Home</a></li>
+                    <li><a href="buy.html" class="foot">Buy Property</a></li>
+                    <li><a href="sell.html" class="foot">Sell Property</a></li>
+                    <li><a href="rent.html" class="foot">Rent</a></li>
+                    <li><a href="about.html" class="foot">About Us</a></li>
+                    <li><a href="contact.html" class="foot">Contact</a></li>
+                    <li><a href="agents.html" class="foot">Agents</a></li>
+            </ul>
+                </div>
+                
+            <hr class="style2">
+                <div class="col-md-12">
+                    <p class="rights">Copyright &copy; Minha's 2020. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

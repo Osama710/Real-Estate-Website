@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=400">
+    <title>Buy Property</title>
+    <link rel="icon" type="image/png" href="img/home3.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/Capture2.jpg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Properties
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item active" href="buy.html">Buy</a>
+                        <a class="dropdown-item" href="sell.html">Sell</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="rent.html">Rent</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agents.html">Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About-Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#form">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#form2">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br><br><br>
+    <div class="modal fade rounded" id="form2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="model-title w-100 text-center">Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex flex-column text-center">
+                  <form class="pr-4 pl-4">
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" id="email1"placeholder="Enter Your Email Address">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="email1"placeholder="Enter Your Password">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-block btn-round">Login</button><br>
+                    <p>Forgot Password? <a href="#" class="text-secondary">Click Here</a></p>
+                  </form>
+                  <div class="modal-footer justify-content-center">
+                    <div>Not a member yet? <a href="#" data-toggle="modal" data-target="#form" class="text-secondary"> Sign Up</a></div>
+                </div>
+                </div>
+            </div> 
+            </div> 
+        </div>
+    </div>
+    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="model-title w-100 text-center">Sign Up</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-secondary">Please fill this form to create an account</p>
+                <div class="d-flex flex-column text-center">
+                  <form class="pr-4 pl-4">
+                      <div class="form-group row">
+                          <div class="col-md-12">
+                            <input type="text" class="form-control" id="email1"placeholder="Enter a Username">
+                          </div>
+                      </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" id="email1"placeholder="Enter an Email Address">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="email1" placeholder="Enter a Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="email1" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-block btn-round">Signup</button><br>
+                    <div class="text-centerS">or use a social network</div>
+                    <div class=" justify-content-center">
+                        <p class="social"><a href="#"><i class="fab fa-facebook text-secondary"></i></a>
+                            <a href="#"><i class="fab fa-twitter text-secondary"></i></a>
+                            <a href="#"><i class="fab fa-google text-secondary"></i></a></p>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="modal-footer justify-content-center">
+                    <div><h5>Already a member? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#form2" class="text-secondary"> Login</a></h5></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  w-100 p-3 buyy">
+        <h1 class="buy mb-3">Find Properties to Buy</h1>
+        <form action="#">
+            <div class="row shadow p-3 mb-5 rounded bggg">
+                <div class="col-auto col-lg-3 mb-2">
+                    <div>
+                        <select class="form-control">
+                            <option selected disabled>City</option>
+                            <option>Karachi</option>
+
+                            <option>Lahore</option>
+                            <option>Islamabad</option>
+                            <option>Multan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-auto col-lg-3 mb-2">
+                    <div>
+                        <input type="input" class="form-control" name="input" placeholder="Location">
+                    </div>
+                </div>
+                
+
+                <div class="col-auto col-lg-3 mb-2">
+                    <select class="form-control">
+                        <option selected disabled>Property Type</option>
+                        <option>House</option>
+                        <option>Flat</option>
+                        <option>Penthouse</option>
+                    </select>
+                </div>
+
+
+                <div class="col-auto col-lg-3 mb-2">
+                    <select class="form-control">
+                        <option selected disabled>Bedrooms</option>
+                        <option value="">All</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                    </select>
+                </div>
+
+                <div class="col-auto col-lg-3 mb-2">
+                    <select class="form-control">
+                        <option selected disabled>Bathrooms</option>
+                        <option value="">All</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                    </select>
+                </div>
+
+                <div class="col-auto col-lg-3 mb-2">
+                    <select class="form-control">
+                        <option selected disabled>Area<span style="font-size: small;">(sq.yards)</span></option>
+                        <option>80 sq.yards</option>
+                        <option>120 sq.yards</option>
+                        <option>240 sq.yards</option>
+                        <option>500 sq.yards</option>
+                        <option>600+ sq.yards</option>
+                    </select>
+                </div>
+                <div class="col-auto col-lg-3 mb-2">
+                    <select class="form-control">
+                        <option selected disabled>Price</option>
+                        <option><span>&lt;</span>15000000 Rs.</option>
+                        <option>15000001-25000000 Rs.</option>
+                        <option>25000001-40000000 Rs.</option>
+                        <option>40000001-60000000 Rs.</option>
+                        <option>60000001<span>&gt;</span> Rs.</option>
+                    </select>
+                </div>
+
+                <div class="col-auto col-lg-3 mb-2">
+                    <button type="submit" class="btn btn-secondary">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <br><h2 id="heading">Featured Properties</h2><br>
+        <div class="row">
+            <div class="col-md-4 col-md-6 col-lg-4 mb-4">
+                <div class="card m-2 rounded img-zoom" style="width: 21rem;">
+                    <div class="card-img-caption">
+                        <p class="card-text m-2 p-2 type rounded-pill">For Sale</p>
+                        <img class="card-img-top imggg image-fluid rounded" src="img/front2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Home</h5>
+                        <p class="card-text">On Sale double story banglow with lawn and car parking.</p>
+                        <i class='fas fa-money-bill' style="color: black;font-size:24px"></i><h4>Rs. 7.5 Crore</h4>  
+                        <img src="img/svg_icon/location.svg" alt="location" class="imgg">Bahadurabad,Karachi
+                        <a href="#"><button class="btn btn-outline-secondary">More Details</button></a>
+                        <hr class="style2">
+                        <div class="card-footer text-muted info">  
+                            6<img src="img/svg_icon/bath.svg" alt="" class="imgg">
+                            6<img src="img/svg_icon/bed.svg" alt="" class="imgg">
+                            450 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imgg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4 mb-4">
+                <div class="card m-2 rounded img-zoom" style="width: 21rem;">
+                    <div class="card-img-caption">
+                        <p class="card-text m-2 p-2 type rounded-pill">For Sale</p>
+                        <img class="card-img-top imggg image-fluid rounded" src="img/house1.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The House</h5>
+                        <p class="card-text">Luxury Villa available For Sale at a reasonable price</p>
+                        <i class='fas fa-money-bill' style="color: black;font-size:24px"></i><h4>Rs. 12 Crore</h4>  
+                        <img src="img/svg_icon/location.svg" alt="location" class="imgg">G-4, Islamabad
+                        <br><a href="#"><button class="btn btn-outline-secondary">More Details</button></a>
+                        <hr class="style2">
+                        <div class="card-footer text-muted info">  
+                            8<img src="img/svg_icon/bath.svg" alt="" class="imgg">
+                            8<img src="img/svg_icon/bed.svg" alt="" class="imgg">
+                            600 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imgg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4 mb-4">
+                <div class="card m-2 rounded img-zoom" style="width: 21rem;">
+                    <div class="card-img-caption">
+                        <p class="card-text m-2 p-2 type rounded-pill">For Sale</p>
+                        <img class="card-img-top imggg image-fluid rounded" src="img/building1.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Creek Vista</h5>
+                        <p class="card-text">4 bed apartment available in the Creek Vista at 3rd floor.</p>
+                        <i class='fas fa-money-bill' style="color: black;font-size:24px"></i><h4>Rs. 2.5 Crore</h4>  
+                        <img src="img/svg_icon/location.svg" alt="location" class="imgg">Defense,Karachi
+                        <br><a href="#"><button class="btn btn-outline-secondary">More Details</button></a>
+                        <hr class="style2">
+                        <div class="card-footer text-muted info">  
+                            4<img src="img/svg_icon/bath.svg" alt="" class="imgg">
+                            4<img src="img/svg_icon/bed.svg" alt="" class="imgg">
+                            250 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imgg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4 mb-4">
+                <div class="card m-2 rounded img-zoom" style="width: 21rem;">
+                    <div class="card-img-caption">
+                        <p class="card-text m-2 p-2 type rounded-pill">For Sale</p>
+                        <img class="card-img-top imggg image-fluid rounded" src="img/footer.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Home</h5>
+                        <p class="card-text">5 Bed single story banglow available for sale.</p>
+                        <i class='fas fa-money-bill' style="color: black;font-size:24px"></i><h4>Rs. 7 Crore</h4>  
+                        <img src="img/svg_icon/location.svg" alt="location" class="imgg">Allama Iqbal Town, Lahore
+                        <a href="#"><button class="btn btn-outline-secondary">More Details</button></a>
+                        <hr class="style2">
+                        <div class="card-footer text-muted info">  
+                            6<img src="img/svg_icon/bath.svg" alt="" class="imgg">
+                            5<img src="img/svg_icon/bed.svg" alt="" class="imgg">
+                            360 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imgg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4 mb-4">
+                <div class="card m-2 rounded img-zoom" style="width: 21rem;">
+                    <div class="card-img-caption">
+                        <p class="card-text m-2 p-2 type rounded-pill">For Sale</p>
+                        <img class="card-img-top imggg image-fluid rounded" src="img/house.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Villa</h5>
+                        <p class="card-text">Available for Sale. Banglow at a perfect location</p>
+                        <i class='fas fa-money-bill' style="color: black;font-size:24px"></i><h4>Rs. 6 Crore</h4>  
+                        <img src="img/svg_icon/location.svg" alt="location" class="imgg">Bahadurabad,Karachi
+                        <a href="#"><button class="btn btn-outline-secondary">More Details</button></a>
+                        <hr class="style2">
+                        <div class="card-footer text-muted info">  
+                            5<img src="img/svg_icon/bath.svg" alt="" class="imgg">
+                            5<img src="img/svg_icon/bed.svg" alt="" class="imgg">
+                            500 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imgg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4 mb-4">
+                <div class="card m-2 rounded img-zoom" style="width: 21rem;">
+                    <div class="card-img-caption">
+                        <p class="card-text m-2 p-2 type rounded-pill">For Sale</p>
+                        <img class="card-img-top imggg image-fluid rounded" src="img/building2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bahria Apartments</h5>
+                        <p class="card-text">2 Bed Apartment Available on Sale on the 12th Floor on the Bahria Apartments</p>
+                        <i class='fas fa-money-bill' style="color: black;font-size:24px"></i><h4>Rs. 3 Crore</h4>  
+                        <img src="img/svg_icon/location.svg" alt="location" class="imgg">Gulshan-e-Iqbal,Karachi
+                        <a href="#"><button class="btn btn-outline-secondary">More Details</button></a>
+                        <hr class="style2">
+                        <div class="card-footer text-muted info">  
+                            3<img src="img/svg_icon/bath.svg" alt="" class="imgg">
+                            2<img src="img/svg_icon/bed.svg" alt="" class="imgg">
+                            200 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imgg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4 mb-4">
+                <div class="card m-2 rounded img-zoom" style="width: 21rem;">
+                    <div class="card-img-caption">
+                        <p class="card-text m-2 p-2 type rounded-pill">For Sale</p>
+                        <img class="card-img-top imggg image-fluid rounded" src="img/building1.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Creek Vista</h5>
+                        <p class="card-text">4 bed apartment available in the Creek Vista at 9rd floor.</p>
+                        <i class='fas fa-money-bill' style="color: black;font-size:24px"></i><h4>Rs. 2.2 Crore</h4>  
+                        <img src="img/svg_icon/location.svg" alt="location" class="imgg">Defense,Karachi
+                        <br><a href="#"><button class="btn btn-outline-secondary">More Details</button></a>
+                        <hr class="style2">
+                        <div class="card-footer text-muted info">  
+                            4<img src="img/svg_icon/bath.svg" alt="" class="imgg">
+                            4<img src="img/svg_icon/bed.svg" alt="" class="imgg">
+                            240 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imgg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4 mb-4">
+                <div class="card m-2 rounded img-zoom" style="width: 21rem;">
+                    <div class="card-img-caption">
+                        <p class="card-text m-2 p-2 type rounded-pill">For Sale</p>
+                        <img class="card-img-top imggg image-fluid rounded" src="img/building.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sumayya Appartments</h5>
+                        <p class="card-text">3 bed apartment available for sale on 1st Floor</p>
+                        <i class='fas fa-money-bill' style="color: black;font-size:24px"></i><h4>Rs. 2.5 Crore</h4>  
+                        <img src="img/svg_icon/location.svg" alt="location" class="imgg">Tariq Road,Karachi
+                        <br><a href="#"><button class="btn btn-outline-secondary">More Details</button></a>
+                        <hr class="style2">
+                        <div class="card-footer text-muted info">  
+                            3<img src="img/svg_icon/bath.svg" alt="" class="imgg">
+                            3<img src="img/svg_icon/bed.svg" alt="" class="imgg">
+                            120 sq.yards<img src="img/svg_icon/square.svg" alt="" class="imgg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="rent">
+                <h1 class="m-4 add">Find Properties Available on Rent</h1>
+                <a href="rent.html" style="text-decoration: none;color: white;"><button class="btn btn-secondary hh m-5">+Find</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="sale">
+                <h1 class="m-4 add">Add Your Property for Sale</h1>
+                <a href="sell.html"><button class="btn btn-info hh m-5">+Add</button></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md rights">
+            <a href="index.html"><img src="img/logo1.jpg" alt="logo" style="opacity: 0.8;"></a><br>
+            <br><h4>Follow Us on Social Media</h4>
+            <p class="social"><a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin-square"></i></a></p>
+                </div>
+                <div class="col-md">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><i class="fa fa-phone-square foot"> +92 336 2417513 </i></li>
+                        <li><i class="fa fa-envelope foot"> minha@gmail.com </i></li>
+                        <li><i class="fa fa-location-arrow foot"> Shop 4,Street 13, Bahadurabad, Karachi</i></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h2>Timing</h2>
+            <ul>
+                <li></li>
+                <hr class="style4">
+                <li class="foot">Monday-Friday: 9AM-9PM</li>
+                <hr class="style4">
+                <li class="foot">Saturday: 9AM-7PM</li>
+                <hr class="style4">
+                <li class="foot">Sunday: Closed</li>
+            </ul>
+                </div>
+                <div class="col-md">
+                    <h2>Useful Links</h2>
+                    <ul>
+                    <li><a href="index.html" class="foot">Home</a></li>
+                    <li><a href="buy.html" class="foot">Buy Property</a></li>
+                    <li><a href="sell.html" class="foot">Sell Property</a></li>
+                    <li><a href="rent.html" class="foot">Rent</a></li>
+                    <li><a href="about.html" class="foot">About Us</a></li>
+                    <li><a href="contact.html" class="foot">Contact</a></li>
+                    <li><a href="agents.html" class="foot">Agents</a></li>
+            </ul>
+                </div>
+                
+            <hr class="style2">
+                <div class="col-md-12">
+                    <p class="rights">Copyright &copy; Minha's 2020. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
